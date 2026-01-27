@@ -1,0 +1,6 @@
+<div th:fragment="responseFragment" xmlns:th="http://www.thymeleaf.org" class="mb-3 p-3 border rounded bg-light">
+    <p class="fw-bold text-primary" th:text="'Q: ' + ${question}"></p>
+    <pre th:wrap="hard"><p th:text="${response}"></p>
+
+        </pre>
+</div>
