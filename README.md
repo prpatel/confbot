@@ -25,5 +25,10 @@ Roadmap / TODOs:
 - [x] Spinner while waiting for response
 - [x] Add more tools
 - [ ] Add tests and evals (LLM as a judge)
+- [ ] Need to add system prompt
 - [ ] Adjust tool descriptions, need to be tightened up as it's confusing the LLM
-- [ ] Use a Tri-hybrid rag strategy as the fall back for when tools don't match user question
+- [ ] Use a Tri-hybrid rag strategy as the fall back for when tools don't match user question (for session/speaker data)
+- [ ] Add in sponsor features:
+  - [ ] create embeddings from Sponsor deck, figure out chunking strategy
+  - [ ] Maybe use tool call for common questions?
+  - [ ] Adjust system prompt to include sponsor information hints
