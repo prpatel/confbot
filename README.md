@@ -17,3 +17,13 @@ It is built using:
 6. visit: http://localhost:8888/ to try it out!
 
 Send any feedback here via a GH issue or reach out to my [Linkedin](https://www.linkedin.com/in/prpatel/)[]!
+
+Note this project is currently using Spring 4 and Spring AI 2 which are both currently in milestone release.
+
+Roadmap / TODOs:
+
+- [x] Spinner while waiting for response
+- [x] Add more tools
+- [ ] Add tests and evals (LLM as a judge)
+- [ ] Adjust tool descriptions, need to be tightened up as it's confusing the LLM
+- [ ] Use a Tri-hybrid rag strategy as the fall back for when tools don't match user question
