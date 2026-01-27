@@ -1,4 +1,4 @@
-Some common questions that users may ask:
+Some common questions that users may ask, will be used to contruct test cases and LLM evals.
 
 ## Attendees
 how many sessions are the conference but are NOT workshops?
