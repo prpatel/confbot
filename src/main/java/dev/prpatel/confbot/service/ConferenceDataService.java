@@ -143,6 +143,20 @@ public class ConferenceDataService {
             
             documents.add(new Document(content, metadata));
         }
+        
+        List<Speaker> speakers = speakerRepository.findAll();
+        for (Speaker speaker : speakers) {
+            String content = "Speaker Name: " + speaker.getFullName() + "\n" +
+                    "Bio: " + speaker.getBio() + "\n" +
+                    "Tagline: " + speaker.getTagLine() + "\n";
+            
+            Map<String, Object> metadata = Map.of(
+                    "speakerId", speaker.getId(),
+                    "fullName", speaker.getFullName()
+            );
+            
+            documents.add(new Document(content, metadata));
+        }
 
         vectorStore.add(documents);
         logger.info("Vector store populated with {} documents", documents.size());
