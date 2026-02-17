@@ -10,6 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+
 @SpringBootTest
 public class ToolTest {
     private final ChatClient chatClient;
@@ -21,7 +22,7 @@ public class ToolTest {
     //
     // they are used throughout the application, and configured in application.properties
     @Autowired
-    public ToolTest(@Qualifier("ollamaChatClient")ChatClient chatClient) {
+    public ToolTest(@Qualifier("ollamaChatClientNoRAG")ChatClient chatClient) {
         this.chatClient = chatClient;
     }
 

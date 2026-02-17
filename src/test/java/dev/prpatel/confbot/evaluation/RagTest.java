@@ -13,7 +13,7 @@ public class RagTest {
     private final ChatClient chatClient;
 
     @Autowired
-    public RagTest(@Qualifier("ollamaChatClient") ChatClient chatClient) {
+    public RagTest(@Qualifier("openAiChatClient") ChatClient chatClient) {
         this.chatClient = chatClient;
     }
 
@@ -39,7 +39,7 @@ public class RagTest {
 
     @Test
     void javaChampions() {
-        String response = chatClient.prompt("Who are the Java Champions speaking at the conference?")
+        String response = chatClient.prompt("which speakers are Java Champions?")
                 .call()
                 .content();
 
